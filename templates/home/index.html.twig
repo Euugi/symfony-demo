@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+
+{% block content %}
+    <div class="container text-center">
+        <h1>Welcome to the training planning app.</h1>
+        <h1>Create your perfect plan!</h1>
+    </div>
+
+    </br>
+    </br>
+
+    <div class="container text-center ">
+        <a href="{{ path('login') }}" class="btn btn-primary m-2">Login</a>
+        <a href="{{ path('register') }}" class="btn btn-primary m-2">Register</a>
+    </div>
+{% endblock %}

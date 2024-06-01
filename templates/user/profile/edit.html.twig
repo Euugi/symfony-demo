@@ -1,0 +1,15 @@
+{% extends 'login_base.html.twig' %}
+
+{% block header %}
+    {{ parent() }}
+    <a href="{{ path('user_profile_delete') }}" class="btn btn-danger">Delete account</a>
+{% endblock %}
+
+{% block content %}
+    <div class="container col-4">
+        <h1>User Profile</h1>
+
+        {{ form(form) }}
+        Your BMI is {{ bmi }}
+    </div>
+{% endblock %}

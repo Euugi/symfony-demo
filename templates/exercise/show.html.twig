@@ -1,0 +1,18 @@
+{% extends 'login_base.html.twig' %}
+
+{% block content %}
+    <div class="container col-4 pt-3">
+        <h1>
+            {{ exercise.name }}
+        </h1>
+
+        {{ exercise.description }}
+        </br>
+        </br>
+        <img src="/uploads/images{{ asset(exercise.imageFile) }}" alt="..." class="img-thumbnail">
+
+        </br>
+        </br>
+        <a href="{{ path('exercises_list') }}" class="btn btn-primary">All exercises</a>
+    </div>
+{% endblock %}
